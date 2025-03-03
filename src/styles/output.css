@@ -2570,4 +2570,9 @@
 }
 @property --tw-contain-style {
   syntax: "*";
-  i
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
