@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="spa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Web</title>
+    <link href="./src/styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/output.css">
+</head>
+
+<body>
+    <header class="navbar " id="home">
+
+
+        
+        <div class="flex justify-between p-2 items-center w-full flex-row border-amber-300 border-solid"> <!-- barra de nav -->
+            <div class="header__logo">
+                <img class="fit_img" src="./src/images/logo.png" alt="logo">
+            </div><!-- AQUI VA EL LOGO -->
+            <div class="nav__reference md:!text-[20px] ">
+                <!-- HIPERVINCULOS DENTRO DE LA PAGINA -->
+                <a class="hover:font-extrabold" href="#home">Inicio</a>
+                <a class="hover:font-extrabold" href="#skills">Habilidades</a>
+                <a class="hover:font-extrabold" href="#projects">Proyectos</a>
+                <a class="hover:font-extrabold" href="#Formulario_contacto">Contacto</a>
+            </div>
+            
+                <a class="text-black  hover:font-extrabold bg-highlight border-2 border-white rounded-2xl w-28 text-[10px] block text-center items-center p-1  md:!text-[20px] md:w-[200px] " href="#Formulario_contacto">¿Tienes una idea? <br> ¡Hablemos ahora!</a>
+           <!-- BOTON DE CONTACTO, TE REDIRIGE A FORMULARIO -->
+    
+
+        </div>
+
+
+    </header>
+
+        <main class="flex flex-col gap-5">
+
+            <section class="hero__section  h-full relative" id="hero">
+                <div class=" bottom-0 h-[300px] md:h-[600px] titulo__img">
+                    <img src="./src/images/Developer2.png" alt="foto del desarrollador">
+                </div>
+        
+                <div class=" titulo absolute top-[50px] right-[2px]  md:top-[270px] md:right-[50px] flex flex-col w-[200px] md:w-[300px] md:h-fit" >
+                    
+            
+                    <h1 class="text-[15px] md:text-2xl">Moises Javier <br> "De ideas a experiencias" Desarrollador Front-End</h1>
+                    <!-- nombre y especialidad destacada -->
+                    <a class="text-black w-[150px] h-[50px] lg:w-[250px] lg:h-[100px] text-center font-bold outline-4 outline-offset-2 lg:text-[20px] "  href="#projects">Descubre cómo <br> puedo ayudarte</a><!-- ENLACE A PROYECTOS -->
+                </div>
+        
+                <div class=" hero__img_1 right-[50%] md:right-1/3 h-14 w-14 absolute transform -rotate-45"> 
+                    <img class="object-cover w-full h-full" src="./src/images/code4.png" alt="">
+                </div>
+        
+                <div class="hero__img_2 right-[40%] md:right-[20%] lg:right-[30%] h-14 w-14 absolute transform-3d rotate-45"> 
+                    <img  class="object-cover w-full h-full" src="./src/images/code5bk.png" alt="">
+                </div>
+            </section>
+
+
+        <section class="relative"> <!-- who i am -->
+
+            <div class="right-[60%] md:right-[80%] main__img_1 border h-32 w-32 absolute transform rotate-x-15 -rotate-y-30 opacity-40"> 
+                <img class="object-cover w-full h-full" src="./src/images/code.webp" alt="">
+            </div>
+            <div class=" main__img_2 border h-24 w-24 absolute transform rotate-y-25 rotate-z-30 opacity-40"> 
+                <img class="object-cover w-full h-full" src="./src/images/code3.webp" alt="">
+            </div>
+            <div class=" main__img_3 border h-36 w-36 opacity-40 absolute  transform rotate-x-50 rotate-z-45 "> 
+                <img class="object-cover w-full h-full  " src="./src/images/code2.jpg" alt="">
+            </div>
+
+            <div class="presentation relative ">
+                <h2 ><strong class="md:text-[30px]">¿Quién soy?</strong></h2><!-- Texto llamativo a primera instancia -->
+                <p class=" text-[10px] md:text-[20px]">Hola, soy Moises Mahonri, un desarrollador Front-End apasionado por transformar tus ideas en experiencias
+                    digitales tangibles. <br><br> Mi objetivo es entender tu visión y convertirla en una interfaz funcional,
+                    atractiva y eficiente, que no solo cumpla con tus expectativas, sino que las supere. <br><br> Cada proyecto
+                    es una oportunidad
+                    para crear soluciones únicas que conecten con tus usuarios y le den vida a tus ideas en la web.</p>
+                <!-- resumen de profesion y pasion por la programacion -->
+                <div class="presentation__buttons">
+                    <!--                     <button class="pres__buttons__button">
+                                <a href="#projects">Descubre cómo <br> puedo ayudarte</a>
+                            </button>
+         --> <button class="flex justify-center items-center pres__buttons__button shadow-[0px_0px_81px_-9px_#e3ff6a] outline-2 outline-offset-2 w-[150px] h-[50px] md:h-[60px] md:w-[200px]  outline-white text-black ">
+                        <a class="text-xs font-bold md:text-[20px] hover:font-extrabold  " href="#Formulario_contacto">¡Hablemos de tu proyecto!</a>
+                    </button><!-- CONTACTAME -->
+                </div>
+                <img src="" alt=""><!-- imagen decorativa -->
+            </div>
+
+        </section>
+        <section><!-- usar flex para centrar ambos divs -->
+            <div class="main__habilidades">
+                <h2 class="text-4xl font-light text-highlight " id="skills">My Skills</h2>
+        
+                <div class="habilidades__box"><!-- iconos de tecnologias utilizadas; utilizar grid -->
+        
+                    <div class="box__icon max-h-[290px] overflow-hidden h-fit  ">
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] "><img class="fit_img" src="./src/images/html5.png" alt="HTML 5"></div>
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/css3.png" alt="css 3"></div>
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/JS.png" alt="javascript"></div>
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/react.png" alt="react"></div>
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/tailwind.svg" alt="Tailwind"></div>
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Vuejs.png" alt="Vue.js"></div>
+                     
+        
+                    </div>
+                    <div class="habilidades__experiencia w-[120px] h-[170px] md:w-[195.53px] md:h-[277px] gap-5 md:gap-10 ">
+
+                        <div class="experiencia__box_icon ">
+                            <p class="text-6xl md:text-9xl">2</p>
+                            <p class="text-xs md:text-[18px] md:mb-2.5">Años de Experiencia Laboral</p>
+
+                        <img class="hidden fit_img" src="./src/images/1yr_exp.png" alt="Años de experiencia">
+                        </div>
+
+                        <button class="experiencia__button button shadow-[0px_0px_10px_5px_#e3ff6a] h-[30px] md:h-[40px]  outline-2 outline-offset-2 outline-white"> <a class="font-semibold hover:font-extrabold md:text-[14px]" href="./src/docs/MMJL AUTOMATIZACIÓN 1022025.pdf" download="Curriculum Moises Javier.pdf" > Descarga mi CV aquí </a> </button><!-- descargar CV -->
+                    </div><!-- años de experiencia -->
+                </div>
+            </div>
+        
+        
+        </section>
+
+        <section  class="main__add_skill"><!-- usar flex para alinear vertical -->
+            <div class="add_skill__box_ha  items-center"><!-- pendiente de avanzar 25/02/2025 -->
+                <div class="box_ha__titulo_ha">
+                    <h2 class="font-light text-2xl md:text-3xl  text-highlight ">Habilidades Adicionales</h2>
+                </div>
+                <div class="box_ha__box_icon"><!-- usar flex para alinear horizontal -->
+                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Github.png" alt="GitHub"></div>
+                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/nodejs.png" alt="NodeJS"></div>
+                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/bootstrap.png" alt="Bootstrap"></div>
+                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/angularjs.png" alt="Angular"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__projects"  id="projects">
+         <div class="projects__p_box">   
+            <div class="p_box__p_text">
+                <h2  class="p_text__titulo text-b text-[20px] md:text-[30px]  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Proyectos que han marcado la diferencia</h2>
+                <button class=" p_text__button right-[150px] top-[70px] md:top-[100px] button shadow-[0px_0px_10px_5px_#e3ff6a] font-bold outline-2 outline-offset-2 outline-white"> <a class="hover:font-extrabold" target="_blank" href="https://github.com/mahojv?tab=repositories"> Descubre mis proyectos <br> en GitHub</a> </button><!-- enlace a repositorio de Github -->
+            </div>
+            <div class="p_box__p_images  "><!-- alinear a la derecha e ir reduciendo tamaño por cada imagen -->
+                <div class="p_images__p_box1"><img class="fit_img" src="./src/images/proy-1.png" alt="Proyecto 1">  </div>
+                <div class="p_images__p_box2"><img class="fit_img" src="./src/images/proy-2.png" alt="Proyecto 2"></div>
+                <div class="p_images__p_box3  "><img class="fit_img" src="./src/images/proy-3.png" alt="Proyecto 3">  </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="main__form">
+            <div class="form__f_box1 h-[300px] w-[300px] md:h-[400px] md:w-[500px]">
+
+                <h2 class="text-[20px] font-semibold md:text-[30px]" id="Formulario_contacto">¡Es el momento! Cuéntame <br> tu idea y hagámoslo posible.</h2>
+                <form class="f_box1__formulario h-[90%] w-[80%]">
+                    <input class="h-[25px] md:h-[40px]" type="text" placeholder="Nombre" name="name" id="name">
+                    <input  class="h-[25px] md:h-[40px]"  type="email" placeholder="Correo" name="email" id="email">
+                    <textarea class="h-[60px] md:h-[100px]"  name="message" id="message" placeholder="Escribe tu mensaje"></textarea>
+                    <button class="button formulario__button w-[200px] md:w-[300px] h-[32px] md:h-[50px] border-4 border-w rounded-xl !font-semibold shadow-[0px_0px_10px_5px_#e3ff6a] font-bold  "> Enviar </button><!-- hacer boton con estilo llamativo -->
+                </form>
+                
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
+
