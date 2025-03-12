@@ -7,7 +7,7 @@
     <title>Portafolio Web</title>
     <link href="./src/styles/main.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/output.css">
-    <script src="./src/scripts/pDinamico.js" defer></script>
+    <script src="./src/scripts/indexDinamico.js" defer></script>
 </head>
 
 <body>
@@ -99,13 +99,9 @@
         
                 <div class="habilidades__box"><!-- iconos de tecnologias utilizadas; utilizar grid -->
         
-                    <div class="box__icon max-h-[290px] overflow-hidden h-fit  ">
+                    <div class="box__icon max-h-[290px] overflow-hidden h-fit  " id="skills_Box">
                         <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] "><img class="fit_img" src="./src/images/html5.png" alt="HTML 5"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/css3.png" alt="css 3"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/JS.png" alt="javascript"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/react.png" alt="react"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/tailwind.svg" alt="Tailwind"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Vuejs.png" alt="Vue.js"></div>
+                        
                      
         
                     </div>
@@ -131,11 +127,10 @@
                 <div class="box_ha__titulo_ha">
                     <h2 class="font-light text-2xl md:text-3xl  text-highlight ">Habilidades Adicionales</h2>
                 </div>
-                <div class="box_ha__box_icon"><!-- usar flex para alinear horizontal -->
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Github.png" alt="GitHub"></div>
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/nodejs.png" alt="NodeJS"></div>
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/bootstrap.png" alt="Bootstrap"></div>
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/angularjs.png" alt="Angular"></div>
+                <div class="box_ha__box_icon" id="addSkill_box" ><!-- usar flex para alinear horizontal -->
+                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Github.png" alt="GitHub">
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -144,7 +139,7 @@
          <div class="projects__p_box">   
             <div class="p_box__p_text">
                 <h2  class="p_text__titulo text-b text-[20px] md:text-[30px]  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Proyectos que han marcado la diferencia</h2>
-                <button class=" p_text__button right-[150px] top-[70px] md:top-[100px] button shadow-[0px_0px_10px_5px_#e3ff6a] font-bold outline-2 outline-offset-2 outline-white"> <a class="hover:font-extrabold" target="_blank" href="https://github.com/mahojv?tab=repositories"> Descubre mis proyectos <br> en GitHub</a> </button><!-- enlace a repositorio de Github -->
+                <button class=" p_text__button right-[150px] top-[70px] md:top-[100px] button shadow-[0px_0px_10px_5px_#e3ff6a] font-bold outline-2 outline-offset-2 outline-white"> <a class="hover:font-extrabold" target="_blank" href="./src/html/proyectos.html"> Descubre mis proyectos </a> </button><!-- enlace a html de proyectos -->
             </div>
             <div class="p_box__p_images  "><!-- alinear a la derecha e ir reduciendo tamaño por cada imagen -->
                 <div class="p_images__p_box1"><img class="fit_img" src="./src/images/proy-1.png" alt="Proyecto 1">  </div>
