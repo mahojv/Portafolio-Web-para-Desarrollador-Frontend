@@ -2,6 +2,25 @@ console.clear()
 const skillsBox    = document.querySelector("#skills_Box")
 const addSkillsBox = document.querySelector("#addSkill_box")
 
+// toggle menu
+const buttonMenu = document.querySelector("#buttonMenu")
+const toggleMenu = document.querySelector("#toggleMenu")
+let memoryToggle = false
+
+buttonMenu.addEventListener('click', toggleMenuDeploy)     
+
+function toggleMenuDeploy(){
+
+    memoryToggle= !memoryToggle
+    if(memoryToggle === true){
+    toggleMenu.classList.remove("hidden")
+    }else{
+        toggleMenu.classList.add("hidden")
+    }
+
+
+}
+
 const skillsArray = [
     {
 
