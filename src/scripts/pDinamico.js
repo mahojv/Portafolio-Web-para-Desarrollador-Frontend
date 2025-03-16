@@ -11,12 +11,15 @@ buttonMenu.addEventListener('click', toggleMenuDeploy)
 
 function toggleMenuDeploy(){
 
+  
+
     memoryToggle= !memoryToggle
     if(memoryToggle === true){
     toggleMenu.classList.remove("hidden")
     }else{
         toggleMenu.classList.add("hidden")
     }
+
 
 
 }

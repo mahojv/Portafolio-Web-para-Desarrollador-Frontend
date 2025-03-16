@@ -51,10 +51,9 @@
         <!-- menu desplegable toggle -->
 
         <nav class="hidden" id="toggleMenu">
-        <div class="border border-amber-50 w-36 absolute right-0 z-10  text-black flex flex-col items-center gap-4 py-6 h-fit my-5 mx-10 rounded-3xl
+        <div class="border border-amber-50 w-36 absolute right-0 z-10  text-white flex flex-col items-center gap-4 py-6 h-fit my-5 mx-10 rounded-3xl
         
-        bg-gradient-to-b from-amber-600 from-0% via-zinc-50 via-50% to-neutral-900 to-100%
-        shadow-xl 
+        bg-gradient-to-b from-slate-900 to-slate-700
         ">
             <a class="hover:font-extrabold flex gap-1" href="#home"> 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -83,7 +82,7 @@
 
     </header>
 
-        <main class="flex flex-col gap-5">
+        <main class="flex flex-col gap-5 ">
 
             <section class="hero__section  h-full relative" id="hero">
                 <div class=" bottom-0  h-[300px] md:h-[600px] titulo__img">
@@ -93,9 +92,9 @@
                 <div class=" titulo absolute top-[50px] right-[2px]  md:top-[270px] md:right-[50px] flex flex-col w-[200px] md:w-[300px] md:h-fit" >
                     
             
-                    <h1 class="text-[15px] md:text-2xl">Moises Javier <br> "De ideas a experiencias" Desarrollador Front-End</h1>
+                    <h1 class="  text-[15px] md:text-2xl">Moises Javier <br> "De ideas a experiencias" Desarrollador Front-End</h1>
                     <!-- nombre y especialidad destacada -->
-                    <a class="text-black w-[150px] h-[50px] lg:w-[250px] lg:h-[100px] text-center font-bold outline-4 outline-offset-2 lg:text-[20px] "  href="#projects">Descubre cómo <br> puedo ayudarte</a><!-- ENLACE A PROYECTOS -->
+                    <a class="text-black w-[150px] h-[50px] lg:w-[250px] lg:h-[100px] text-center   lg:text-[20px] hover:shadow-[0px_0px_10px_5px_#e3ff6a] hover:!font-semibold outline-2 outline-offset-2 outline-white "  href="#projects">Descubre como <br> puedo ayudarte</a><!-- ENLACE A PROYECTOS -->
                 </div>
         
                 <div class=" hero__img_1 right-[50%] md:right-[40%] h-14 w-14 absolute transform -rotate-45"> 
@@ -108,7 +107,7 @@
             </section>
 
 
-        <section class="relative"> <!-- who i am -->
+        <section class="relative md:mt-[50px]"> <!-- who i am -->
 
             <div class="right-[60%] md:right-[80%] main__img_1 border h-32 w-32 absolute transform rotate-x-15 -rotate-y-30 opacity-40"> 
                 <img class="object-cover w-full h-full" src="./src/images/code.webp" alt="">
@@ -122,37 +121,36 @@
 
             <div class="presentation relative ">
                 <h2 ><strong class="md:text-[30px]">¿Quién soy?</strong></h2><!-- Texto llamativo a primera instancia -->
-                <p class=" text-[10px] md:text-[20px]">Hola, soy Moises Mahonri, un desarrollador Front-End apasionado por transformar tus ideas en experiencias
+                <p class=" text-[10px] md:text-[20px] animate-slidein">Hola, soy Moises Mahonri, un desarrollador Front-End apasionado por transformar tus ideas en experiencias
                     digitales tangibles. <br><br> Mi objetivo es entender tu visión y convertirla en una interfaz funcional,
                     atractiva y eficiente, que no solo cumpla con tus expectativas, sino que las supere. <br><br> Cada proyecto
-                    es una oportunidad
-                    para crear soluciones únicas que conecten con tus usuarios y le den vida a tus ideas en la web.</p>
+                    es una oportunidad para crear soluciones únicas que conecten con tus usuarios y le den vida a tus ideas en la web.</p>
                 <!-- resumen de profesion y pasion por la programacion -->
                 <div class="presentation__buttons">
                     <!--                     <button class="pres__buttons__button">
                                 <a href="#projects">Descubre cómo <br> puedo ayudarte</a>
                             </button>
          --> <button class="flex justify-center items-center pres__buttons__button hover:shadow-[0px_0px_81px_-9px_#e3ff6a] outline-2 outline-offset-2 w-[150px] h-[50px] md:h-[60px] md:w-[200px]  outline-white text-black ">
-                        <a class="text-xs font-bold md:text-[20px] hover:font-extrabold  " href="#Formulario_contacto">¡Hablemos de tu proyecto!</a>
+                        <a class="text-xs  md:text-[20px] hover:font-semibold  " href="#Formulario_contacto">¡Hablemos de tu proyecto!</a>
                     </button><!-- CONTACTAME -->
                 </div>
                 <img src="" alt=""><!-- imagen decorativa -->
             </div>
 
         </section>
-        <section class="pt-4"><!-- usar flex para centrar ambos divs -->
+        <section class=" md:mt-[100px]"><!-- usar flex para centrar ambos divs -->
             <div class="main__habilidades">
                 <h2 class="text-4xl font-light text-highlight " id="skills">My Skills</h2>
         
                 <div class="habilidades__box"><!-- iconos de tecnologias utilizadas; utilizar grid -->
         
                     <div class="box__icon max-h-[290px] overflow-hidden h-fit  " id="skills_Box">
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] "><img class="fit_img" src="./src/images/html5.png" alt="HTML 5"></div>
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] animate-pulse  "><img class="fit_img" src="./src/images/html5.png" alt="HTML 5"></div>
                         
                      
         
                     </div>
-                    <div class="habilidades__experiencia w-[120px] h-[170px] md:w-[195.53px] md:h-[277px] gap-5 md:gap-10 ">
+                    <div class="habilidades__experiencia w-[120px] h-[170px] md:w-[195.53px] md:h-[277px] gap-5 md:gap-12 ">
 
                         <div class="experiencia__box_icon ">
                             <p class="text-6xl md:text-9xl">2</p>
@@ -161,7 +159,7 @@
                         <img class="hidden fit_img" src="./src/images/1yr_exp.png" alt="Años de experiencia">
                         </div>
 
-                        <button class="experiencia__button button hover:shadow-[0px_0px_10px_5px_#e3ff6a] h-[30px] md:h-[40px]  outline-2 outline-offset-2 outline-white"> <a class="font-semibold hover:font-extrabold md:text-[14px]" href="./src/docs/MMJL AUTOMATIZACIÓN 1022025.pdf" download="Curriculum Moises Javier.pdf" > Descarga mi CV aquí </a> </button><!-- descargar CV -->
+                        <a class=" bg-highlight text-black text-[9px] p-[3px] flex justify-center items-center hover:shadow-[0px_0px_10px_5px_#e3ff6a] w-full h-[30px] md:h-[40px]   outline-2 outline-offset-2 outline-white hover:!font-semibold md:text-[15px] rounded-3xl" href="./src/docs/MMJL AUTOMATIZACIÓN 1022025.pdf" download="Curriculum Moises Javier.pdf" > Descarga mi CV aquí </a><!-- descargar CV -->
                     </div><!-- años de experiencia -->
                 </div>
             </div>
@@ -185,8 +183,8 @@
         <section class="main__projects"  id="projects">
          <div class="projects__p_box">   
             <div class="p_box__p_text">
-                <h2  class="p_text__titulo text-b text-[20px] md:text-[30px]  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Proyectos que han marcado la diferencia</h2>
-                <button class=" p_text__button right-[150px] top-[70px] md:top-[100px] button hover:shadow-[0px_0px_10px_5px_#e3ff6a] font-bold outline-2 outline-offset-2 outline-white"> <a class="hover:font-extrabold" target="_blank" href="./src/html/proyectos.html"> Descubre mis proyectos </a> </button><!-- enlace a html de proyectos -->
+                <h2  class="p_text__titulo text-b text-[20px] md:text-[30px]  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] [text-shadow:_0_4px_8px_#E3FF6A]">Proyectos que han marcado la diferencia</h2>
+                <a class=" p_text__button right-[150px] top-[70px] md:top-[100px] button hover:shadow-[0px_0px_10px_5px_#e3ff6a] hover:!font-semibold outline-2 outline-offset-2 outline-white text-center" target="_blank" href="./src/html/proyectos.html"> Descubre mis proyectos </a> <!-- enlace a html de proyectos -->
             </div>
             <div class="p_box__p_images  "><!-- alinear a la derecha e ir reduciendo tamaño por cada imagen -->
                 <div class="p_images__p_box1"><img class="fit_img" src="./src/images/proy-1.png" alt="Proyecto 1">  </div>
@@ -197,14 +195,14 @@
         </section>
 
         <section class="main__form "  id="Formulario_contacto">
-            <div class="form__f_box1 shadow-[0px_4px_44px_-1px_#1a90d9] h-[300px] w-[300px] md:h-[400px] md:w-[500px]">
+            <div class="form__f_box1 shadow-[0px_4px_44px_-1px_#1a90d9] p-[20px] h-fit w-[300px] md:h-fit md:w-[500px]">
 
-                <h2 class="text-[20px] font-semibold md:text-[30px]">¡Es el momento! Cuéntame <br> tu idea y hagámoslo posible.</h2>
-                <form class="f_box1__formulario h-[90%] w-[80%]">
-                    <input class="h-[25px] md:h-[40px]" type="text" placeholder="Nombre" name="name" id="name">
-                    <input  class="h-[25px] md:h-[40px]"  type="email" placeholder="Correo" name="email" id="email">
-                    <textarea class="h-[60px] md:h-[100px]"  name="message" id="message" placeholder="Escribe tu mensaje"></textarea>
-                    <button class="button formulario__button w-[200px] md:w-[300px] h-[32px] md:h-[50px] border-4 border-w rounded-xl !font-semibold hover:shadow-[0px_0px_10px_5px_#e3ff6a]   "> Enviar </button><!-- hacer boton con estilo llamativo -->
+                <h2 class="text-[20px] font-semibold md:text-[30px] text-center">¡Es el momento! Cuéntame <br> tu idea y hagámoslo posible.</h2>
+                <form class="f_box1__formulario h-[90%] w-[80%]" action="https://formsubmit.co/2e0bbfd8e123556e9a729019b5d02d7f " method="POST">
+                    <label class="w-full " for="name"><input required class="h-[25px] md:h-[40px] text-black px-[10px] py-[5px]" type="text" placeholder="Nombre" name="name" id="name"></label>
+                    <label class="w-full h-[25px] md:h-[40px]" for="email"><input required class="h-[25px] md:h-[40px] text-black px-[10px] py-[5px]" type="email" placeholder="Correo" name="email" id="email"></label>
+                    <label class=" w-full " for="message"><textarea required class="h-[60px] md:h-[100px] text-black px-[10px] py-[5px]"  name="message" id="message" placeholder="Escribe tu mensaje"></textarea></label>
+                    <button class="button formulario__button w-[200px] md:w-[300px] h-[32px] md:h-[50px] border hover:border  rounded-xl !font-semibold hover:shadow-[0px_0px_10px_5px_#e3ff6a]   "> Enviar </button><!-- hacer boton con estilo llamativo -->
                 </form>
                 
             </div>

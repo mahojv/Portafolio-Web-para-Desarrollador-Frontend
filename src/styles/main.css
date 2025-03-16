@@ -188,12 +188,18 @@ md:h-[600px]*/
       right: 15px;
       width: 180px; */
 
+      
+
   
 
       
       
 
   }
+
+
+
+
   .titulo a{ /* boton de presentación */
     position: absolute;
     top: 65%;
@@ -501,7 +507,7 @@ color: var(--color-dark);
   align-items: center;
   gap: 30px;
   background-color: var(--color-light);
-  padding-top: 20px;
+  
   /* filter: drop-shadow(4px 5px 44px #198bd2); */
 
 

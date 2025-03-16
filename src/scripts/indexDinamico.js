@@ -11,15 +11,19 @@ buttonMenu.addEventListener('click', toggleMenuDeploy)
 
 function toggleMenuDeploy(){
 
-    memoryToggle= !memoryToggle
-    if(memoryToggle === true){
-    toggleMenu.classList.remove("hidden")
-    }else{
-        toggleMenu.classList.add("hidden")
-    }
+    // funciona pero se hace el otro pa practicar lo del profe jaja
 
+    // memoryToggle= !memoryToggle
+    // if(memoryToggle === true){
+    // toggleMenu.classList.remove("hidden")
+    // }else{
+    //     toggleMenu.classList.add("hidden")
+    // }
+
+        toggleMenu.classList.toggle("hidden")       //funcion toogle agrega y remueve la clase
 
 }
+
 
 const skillsArray = [
     {
@@ -110,7 +114,7 @@ function skillsDeploy ( Skill, element ){
     for (let i = 0; i < Skill.length; i++) {
         const item = Skill[i];
         const template = `
-        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] "><img class="fit_img" src=${item.src} alt=${item.alt}></div>
+        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] hover:animate-bounce animate-pulse "><img class="fit_img" src=${item.src} alt=${item.alt}></div>
         `
 
         console.log(i)
@@ -126,7 +130,7 @@ function addSkillsDeploy ( addSkill, element ){
      for (let i = 0; i < addSkill.length; i++) {
          const item = addSkill[i];
          const template = `
-         <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src= ${item.src} alt=${item.alt}>
+         <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] hover:animate-bounce animate-pulse"><img class="fit_img" src= ${item.src} alt=${item.alt}>
          </div>
          `
  
