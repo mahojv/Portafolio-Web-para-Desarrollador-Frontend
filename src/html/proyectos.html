@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="../styles/output.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="../scripts/pDinamico.js" defer></script>
+</head>
+<body>
+    <header class="navbar " id="home">
+
+
+        
+        <div class="flex justify-between p-2 items-center w-full flex-row border-amber-300 border-solid"> <!-- barra de nav -->
+            <div class="header__logo">
+                <img class="fit_img" src="../images/logo.png" alt="logo">
+            </div><!-- AQUI VA EL LOGO -->
+            <div class="nav__reference md:!text-[20px] gap-5 hidden text-[10px] md:flex">
+                <!-- HIPERVINCULOS DENTRO DE LA PAGINA -->
+                <a class="hover:font-extrabold" href="../../index.html">Inicio</a>
+                <a class="hover:font-extrabold" href="../../index.html#skills">Habilidades</a>
+                <a class="hover:font-extrabold" href="../../src/html/proyectos.html">Proyectos</a>
+                <a class="hover:font-extrabold" href="../../index.html#Formulario_contacto">Contacto</a>
+            </div>
+            
+            <a class="text-white  hover:font-extrabold  border-2 border-white rounded-2xl w-28 text-[12px]   text-center md:!text-[20px] md:w-[200px] hidden md:flex justify-between pl-12 lg:pl-13 gap-1" href="../../index.html#Formulario_contacto"><p>Contacto</p> 
+                <div class="border bg-highlight border-amber-50 rounded-full w-8 h-8 text-black font-semibold flex justify-center items-center"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5" />
+                      </svg>
+                      
+                  </div></a>
+           <!-- BOTON DE CONTACTO, TE REDIRIGE A FORMULARIO -->
+    
+
+                   <!-- BOTON PARA DESPLEGAR MENU TOGGLE -->
+                   <button type="menu" class="font-bold ml-7 md:hidden" id=buttonMenu> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                  </button>
+        </div>
+
+        <!-- menu desplegable toggle -->
+
+        <nav class="hidden" id="toggleMenu">
+        <div class="border border-amber-50 w-36 absolute right-0 z-10  text-white flex flex-col items-center gap-4 py-6 h-fit my-5 mx-10 rounded-3xl
+        
+        bg-gradient-to-b from-slate-900 to-slate-700
+        ">
+            <a class="hover:font-extrabold flex gap-1" href="../../index.html"> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  Inicio</a>
+            <a class="hover:font-extrabold  flex gap-1" href="../../index.html#skills">
+                <svg data-slot="icon" fill="none" class="size-6" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path  stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path>
+                  </svg>
+                Habilidades</a>
+            <a class="hover:font-extrabold  flex gap-1" href="../../#projects">
+                <svg data-slot="icon" fill="none" class="size-6" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"></path>
+                  </svg>
+                Proyectos</a>
+            <a class="hover:font-extrabold  flex gap-1" href="../../#Formulario_contacto">
+                <svg data-slot="icon" fill="none" class="size-6" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"></path>
+                  </svg>
+                Contacto</a>
+
+        </div>
+    </nav>
+
+
+    </header>
+
+    <main class="  ">
+
+
+        <h1 class="text-[30px] text-center mb-8">Proyectos</h1>
+        
+
+        <div class=" w-full p-4 projects-grid gap-4 justify-center" id="project_box">
+
+            <div class="border  border-white rounded-2xl shadow-xl gap-2.5 w-80 h-fit overflow-hidden">
+                <figure class="  rounded-t-2xl aspect-square ">
+                    <img class="object-cover w-full aspect-auto " src="../images/proy-1.png" alt="">
+                </figure>
+                <div class="flex flex-col  py-4 border-t-1 text-gray-400 gap-2 px-4 ">
+                    <h2 class="font-semibold text-xl text-white">*nombre de proyecto*</h2>
+                    <span >Descripcion: *descripcion * </span>
+                    <span>Fecha de creación: *fechaCreacion* </span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        </section>
+
+    </main>
+    
+</body>
+</html>

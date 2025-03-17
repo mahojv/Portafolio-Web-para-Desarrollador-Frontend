@@ -7,10 +7,11 @@
     <title>Portafolio Web</title>
     <link href="./src/styles/main.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/output.css">
+    <script src="./src/scripts/indexDinamico.js" defer></script>
 </head>
 
 <body>
-    <header class="navbar " id="home">
+    <header class="navbar relative " id="home">
 
 
         
@@ -18,39 +19,85 @@
             <div class="header__logo">
                 <img class="fit_img" src="./src/images/logo.png" alt="logo">
             </div><!-- AQUI VA EL LOGO -->
-            <div class="nav__reference md:!text-[20px] ">
+            <div class="nav__reference md:!text-[20px] gap-5 hidden text-[10px] md:flex">
                 <!-- HIPERVINCULOS DENTRO DE LA PAGINA -->
                 <a class="hover:font-extrabold" href="#home">Inicio</a>
                 <a class="hover:font-extrabold" href="#skills">Habilidades</a>
-                <a class="hover:font-extrabold" href="#projects">Proyectos</a>
+                <a class="hover:font-extrabold" href="./src/html/proyectos.html">Proyectos</a>
                 <a class="hover:font-extrabold" href="#Formulario_contacto">Contacto</a>
             </div>
-            
-                <a class="text-black  hover:font-extrabold bg-highlight border-2 border-white rounded-2xl w-28 text-[10px] block text-center items-center p-1  md:!text-[20px] md:w-[200px] " href="#Formulario_contacto">¿Tienes una idea? <br> ¡Hablemos ahora!</a>
+                <!-- boton contacto -->
+                 
+                <a class="text-white  hover:font-extrabold  border-2 border-white rounded-2xl w-28 text-[12px]   text-center md:!text-[20px] md:w-[200px] hidden md:flex justify-between pl-12 lg:pl-13 gap-1" href="#Formulario_contacto"><p>Contacto</p> 
+                <div class="border bg-highlight border-amber-50 rounded-full w-8 h-8 text-black font-semibold flex justify-center items-center"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5" />
+                      </svg>
+                      
+                  </div></a>
+                
            <!-- BOTON DE CONTACTO, TE REDIRIGE A FORMULARIO -->
     
 
+           <!-- BOTON PARA DESPLEGAR MENU TOGGLE -->
+                  <button type="menu" class="font-bold ml-7 md:hidden" id=buttonMenu> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
+                  </button>
         </div>
+
+        <!-- menu desplegable toggle -->
+
+        <nav class="hidden" id="toggleMenu">
+        <div class="border border-amber-50 w-36 absolute right-0 z-10  text-white flex flex-col items-center gap-4 py-6 h-fit my-5 mx-10 rounded-3xl
+        
+        bg-gradient-to-b from-slate-900 to-slate-700
+        ">
+            <a class="hover:font-extrabold flex gap-1" href="#home"> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  Inicio</a>
+            <a class="hover:font-extrabold  flex gap-1" href="#skills">
+                <svg data-slot="icon" fill="none" class="size-6" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path  stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"></path>
+                  </svg>
+                Habilidades</a>
+            <a class="hover:font-extrabold  flex gap-1" href="#projects">
+                <svg data-slot="icon" fill="none" class="size-6" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"></path>
+                  </svg>
+                Proyectos</a>
+            <a class="hover:font-extrabold  flex gap-1" href="#Formulario_contacto">
+                <svg data-slot="icon" fill="none" class="size-6" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"></path>
+                  </svg>
+                Contacto</a>
+
+        </div>
+    </nav>
 
 
     </header>
 
-        <main class="flex flex-col gap-5">
+        <main class="flex flex-col gap-5 ">
 
             <section class="hero__section  h-full relative" id="hero">
-                <div class=" bottom-0 h-[300px] md:h-[600px] titulo__img">
-                    <img src="./src/images/Developer2.png" alt="foto del desarrollador">
+                <div class=" bottom-0  h-[300px] md:h-[600px] titulo__img">
+                    <img class="" src="./src/images/Developer2.png" alt="foto del desarrollador">
                 </div>
         
                 <div class=" titulo absolute top-[50px] right-[2px]  md:top-[270px] md:right-[50px] flex flex-col w-[200px] md:w-[300px] md:h-fit" >
                     
             
-                    <h1 class="text-[15px] md:text-2xl">Moises Javier <br> "De ideas a experiencias" Desarrollador Front-End</h1>
+                    <h1 class="  text-[15px] md:text-2xl">Moises Javier <br> "De ideas a experiencias" Desarrollador Front-End</h1>
                     <!-- nombre y especialidad destacada -->
-                    <a class="text-black w-[150px] h-[50px] lg:w-[250px] lg:h-[100px] text-center font-bold outline-4 outline-offset-2 lg:text-[20px] "  href="#projects">Descubre cómo <br> puedo ayudarte</a><!-- ENLACE A PROYECTOS -->
+                    <a class="text-black w-[150px] h-[50px] lg:w-[250px] lg:h-[100px] text-center   lg:text-[20px] hover:shadow-[0px_0px_10px_5px_#e3ff6a] hover:!font-semibold outline-2 outline-offset-2 outline-white "  href="#projects">Descubre como <br> puedo ayudarte</a><!-- ENLACE A PROYECTOS -->
                 </div>
         
-                <div class=" hero__img_1 right-[50%] md:right-1/3 h-14 w-14 absolute transform -rotate-45"> 
+                <div class=" hero__img_1 right-[50%] md:right-[40%] h-14 w-14 absolute transform -rotate-45"> 
                     <img class="object-cover w-full h-full" src="./src/images/code4.png" alt="">
                 </div>
         
@@ -60,7 +107,7 @@
             </section>
 
 
-        <section class="relative"> <!-- who i am -->
+        <section class="relative md:mt-[50px]"> <!-- who i am -->
 
             <div class="right-[60%] md:right-[80%] main__img_1 border h-32 w-32 absolute transform rotate-x-15 -rotate-y-30 opacity-40"> 
                 <img class="object-cover w-full h-full" src="./src/images/code.webp" alt="">
@@ -74,41 +121,36 @@
 
             <div class="presentation relative ">
                 <h2 ><strong class="md:text-[30px]">¿Quién soy?</strong></h2><!-- Texto llamativo a primera instancia -->
-                <p class=" text-[10px] md:text-[20px]">Hola, soy Moises Mahonri, un desarrollador Front-End apasionado por transformar tus ideas en experiencias
+                <p class=" text-[10px] md:text-[20px] animate-slidein">Hola, soy Moises Mahonri, un desarrollador Front-End apasionado por transformar tus ideas en experiencias
                     digitales tangibles. <br><br> Mi objetivo es entender tu visión y convertirla en una interfaz funcional,
                     atractiva y eficiente, que no solo cumpla con tus expectativas, sino que las supere. <br><br> Cada proyecto
-                    es una oportunidad
-                    para crear soluciones únicas que conecten con tus usuarios y le den vida a tus ideas en la web.</p>
+                    es una oportunidad para crear soluciones únicas que conecten con tus usuarios y le den vida a tus ideas en la web.</p>
                 <!-- resumen de profesion y pasion por la programacion -->
                 <div class="presentation__buttons">
                     <!--                     <button class="pres__buttons__button">
                                 <a href="#projects">Descubre cómo <br> puedo ayudarte</a>
                             </button>
-         --> <button class="flex justify-center items-center pres__buttons__button shadow-[0px_0px_81px_-9px_#e3ff6a] outline-2 outline-offset-2 w-[150px] h-[50px] md:h-[60px] md:w-[200px]  outline-white text-black ">
-                        <a class="text-xs font-bold md:text-[20px] hover:font-extrabold  " href="#Formulario_contacto">¡Hablemos de tu proyecto!</a>
+         --> <button class="flex justify-center items-center pres__buttons__button hover:shadow-[0px_0px_81px_-9px_#e3ff6a] outline-2 outline-offset-2 w-[150px] h-[50px] md:h-[60px] md:w-[200px]  outline-white text-black ">
+                        <a class="text-xs  md:text-[20px] hover:font-semibold  " href="#Formulario_contacto">¡Hablemos de tu proyecto!</a>
                     </button><!-- CONTACTAME -->
                 </div>
                 <img src="" alt=""><!-- imagen decorativa -->
             </div>
 
         </section>
-        <section><!-- usar flex para centrar ambos divs -->
+        <section class=" md:mt-[100px]"><!-- usar flex para centrar ambos divs -->
             <div class="main__habilidades">
                 <h2 class="text-4xl font-light text-highlight " id="skills">My Skills</h2>
         
                 <div class="habilidades__box"><!-- iconos de tecnologias utilizadas; utilizar grid -->
         
-                    <div class="box__icon max-h-[290px] overflow-hidden h-fit  ">
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] "><img class="fit_img" src="./src/images/html5.png" alt="HTML 5"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/css3.png" alt="css 3"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/JS.png" alt="javascript"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/react.png" alt="react"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/tailwind.svg" alt="Tailwind"></div>
-                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Vuejs.png" alt="Vue.js"></div>
+                    <div class="box__icon max-h-[290px] overflow-hidden h-fit  " id="skills_Box">
+                        <div class="icon__skill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px] animate-pulse  "><img class="fit_img" src="./src/images/html5.png" alt="HTML 5"></div>
+                        
                      
         
                     </div>
-                    <div class="habilidades__experiencia w-[120px] h-[170px] md:w-[195.53px] md:h-[277px] gap-5 md:gap-10 ">
+                    <div class="habilidades__experiencia w-[120px] h-[170px] md:w-[195.53px] md:h-[277px] gap-5 md:gap-12 ">
 
                         <div class="experiencia__box_icon ">
                             <p class="text-6xl md:text-9xl">2</p>
@@ -117,7 +159,7 @@
                         <img class="hidden fit_img" src="./src/images/1yr_exp.png" alt="Años de experiencia">
                         </div>
 
-                        <button class="experiencia__button button shadow-[0px_0px_10px_5px_#e3ff6a] h-[30px] md:h-[40px]  outline-2 outline-offset-2 outline-white"> <a class="font-semibold hover:font-extrabold md:text-[14px]" href="./src/docs/MMJL AUTOMATIZACIÓN 1022025.pdf" download="Curriculum Moises Javier.pdf" > Descarga mi CV aquí </a> </button><!-- descargar CV -->
+                        <a class=" bg-highlight text-black text-[9px] p-[3px] flex justify-center items-center hover:shadow-[0px_0px_10px_5px_#e3ff6a] w-full h-[30px] md:h-[40px]   outline-2 outline-offset-2 outline-white hover:!font-semibold md:text-[15px] rounded-3xl" href="./src/docs/MMJL AUTOMATIZACIÓN 1022025.pdf" download="Curriculum Moises Javier.pdf" > Descarga mi CV aquí </a><!-- descargar CV -->
                     </div><!-- años de experiencia -->
                 </div>
             </div>
@@ -130,11 +172,10 @@
                 <div class="box_ha__titulo_ha">
                     <h2 class="font-light text-2xl md:text-3xl  text-highlight ">Habilidades Adicionales</h2>
                 </div>
-                <div class="box_ha__box_icon"><!-- usar flex para alinear horizontal -->
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Github.png" alt="GitHub"></div>
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/nodejs.png" alt="NodeJS"></div>
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/bootstrap.png" alt="Bootstrap"></div>
-                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/angularjs.png" alt="Angular"></div>
+                <div class="box_ha__box_icon" id="addSkill_box" ><!-- usar flex para alinear horizontal -->
+                    <div class="icon__addskill w-[60px] h-[80px] md:w-[100px] md:h-[133.33px]"><img class="fit_img" src="./src/images/Github.png" alt="GitHub">
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -142,8 +183,8 @@
         <section class="main__projects"  id="projects">
          <div class="projects__p_box">   
             <div class="p_box__p_text">
-                <h2  class="p_text__titulo text-b text-[20px] md:text-[30px]  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Proyectos que han marcado la diferencia</h2>
-                <button class=" p_text__button right-[150px] top-[70px] md:top-[100px] button shadow-[0px_0px_10px_5px_#e3ff6a] font-bold outline-2 outline-offset-2 outline-white"> <a class="hover:font-extrabold" target="_blank" href="https://github.com/mahojv?tab=repositories"> Descubre mis proyectos <br> en GitHub</a> </button><!-- enlace a repositorio de Github -->
+                <h2  class="p_text__titulo text-b text-[20px] md:text-[30px]  drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] [text-shadow:_0_4px_8px_#E3FF6A]">Proyectos que han marcado la diferencia</h2>
+                <a class=" p_text__button right-[150px] top-[70px] md:top-[100px] button hover:shadow-[0px_0px_10px_5px_#e3ff6a] hover:!font-semibold outline-2 outline-offset-2 outline-white text-center" target="_blank" href="./src/html/proyectos.html"> Descubre mis proyectos </a> <!-- enlace a html de proyectos -->
             </div>
             <div class="p_box__p_images  "><!-- alinear a la derecha e ir reduciendo tamaño por cada imagen -->
                 <div class="p_images__p_box1"><img class="fit_img" src="./src/images/proy-1.png" alt="Proyecto 1">  </div>
@@ -153,15 +194,15 @@
         </div>
         </section>
 
-        <section class="main__form">
-            <div class="form__f_box1 h-[300px] w-[300px] md:h-[400px] md:w-[500px]">
+        <section class="main__form "  id="Formulario_contacto">
+            <div class="form__f_box1 shadow-[0px_4px_44px_-1px_#1a90d9] p-[20px] h-fit w-[300px] md:h-fit md:w-[500px]">
 
-                <h2 class="text-[20px] font-semibold md:text-[30px]" id="Formulario_contacto">¡Es el momento! Cuéntame <br> tu idea y hagámoslo posible.</h2>
-                <form class="f_box1__formulario h-[90%] w-[80%]">
-                    <input class="h-[25px] md:h-[40px]" type="text" placeholder="Nombre" name="name" id="name">
-                    <input  class="h-[25px] md:h-[40px]"  type="email" placeholder="Correo" name="email" id="email">
-                    <textarea class="h-[60px] md:h-[100px]"  name="message" id="message" placeholder="Escribe tu mensaje"></textarea>
-                    <button class="button formulario__button w-[200px] md:w-[300px] h-[32px] md:h-[50px] border-4 border-w rounded-xl !font-semibold shadow-[0px_0px_10px_5px_#e3ff6a] font-bold  "> Enviar </button><!-- hacer boton con estilo llamativo -->
+                <h2 class="text-[20px] font-semibold md:text-[30px] text-center">¡Es el momento! Cuéntame <br> tu idea y hagámoslo posible.</h2>
+                <form class="f_box1__formulario h-[90%] w-[80%]" action="https://formsubmit.co/2e0bbfd8e123556e9a729019b5d02d7f " method="POST">
+                    <label class="w-full " for="name"><input required class="h-[25px] md:h-[40px] text-black px-[10px] py-[5px]" type="text" placeholder="Nombre" name="name" id="name"></label>
+                    <label class="w-full h-[25px] md:h-[40px]" for="email"><input required class="h-[25px] md:h-[40px] text-black px-[10px] py-[5px]" type="email" placeholder="Correo" name="email" id="email"></label>
+                    <label class=" w-full " for="message"><textarea required class="h-[60px] md:h-[100px] text-black px-[10px] py-[5px]"  name="message" id="message" placeholder="Escribe tu mensaje"></textarea></label>
+                    <button class="button formulario__button w-[200px] md:w-[300px] h-[32px] md:h-[50px] border hover:border  rounded-xl !font-semibold hover:shadow-[0px_0px_10px_5px_#e3ff6a]   "> Enviar </button><!-- hacer boton con estilo llamativo -->
                 </form>
                 
             </div>

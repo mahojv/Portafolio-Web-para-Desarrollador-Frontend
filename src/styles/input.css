@@ -7,4 +7,15 @@
     --color-neon-green: #A4FF7A;
     --color-deep-blue: #1E293B;
     --color-soft-gray: #8892B0;
+
+
+
+    
   }
+
+  .projects-grid{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+  }
+

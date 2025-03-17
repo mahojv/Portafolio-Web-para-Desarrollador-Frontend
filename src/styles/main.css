@@ -1,13 +1,5 @@
 
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-    
-}
-
 :root {
     --color-dark: #0D1117;
     --color-light: #FFFFFF;
@@ -60,14 +52,14 @@
 
 
   }
-  .nav__reference {
+  /* .nav__reference {
 
     font-size: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     
-  }
+    
+  } */
 
 
   .nav__reference a{
@@ -172,7 +164,7 @@ md:h-[600px]*/
   }
 
   .titulo__img img{
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
     filter: drop-shadow(96px -11px 100px #bec73d);
@@ -196,12 +188,18 @@ md:h-[600px]*/
       right: 15px;
       width: 180px; */
 
+      
+
   
 
       
       
 
   }
+
+
+
+
   .titulo a{ /* boton de presentación */
     position: absolute;
     top: 65%;
@@ -509,8 +507,8 @@ color: var(--color-dark);
   align-items: center;
   gap: 30px;
   background-color: var(--color-light);
-  padding-top: 20px;
-  filter: drop-shadow(4px 5px 44px #198bd2);
+  
+  /* filter: drop-shadow(4px 5px 44px #198bd2); */
 
 
 }
